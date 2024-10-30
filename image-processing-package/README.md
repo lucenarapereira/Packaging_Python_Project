@@ -1,8 +1,10 @@
 O CLAHE (Contrast Limited Adaptive Histogram Equalization) é uma técnica de processamento de imagens usada para melhorar o contraste, especialmente em áreas muito claras ou escuras, e é uma extensão do AHE (Adaptive Histogram Equalization). O CLAHE é amplamente utilizado em áreas de visão computacional e análise de imagens médicas, onde o ajuste de contraste detalhado em pequenas regiões é essencial.
 
+
 Conceito e Funcionamento do CLAHE
 
 A equalização de histograma é uma técnica que redistribui os valores de intensidade (ou brilho) de uma imagem para aumentar o contraste, deixando a imagem mais equilibrada. O CLAHE vai além disso ao trabalhar em blocos menores (ou "tiles") da imagem em vez da imagem inteira. Isso permite ajustar o contraste em diferentes partes da imagem separadamente.
+
 
 Passo a Passo do Processo
 - Divisão em Blocos Locais (Tiles): A imagem é dividida em blocos menores, normalmente de tamanhos como 8x8 pixels ou 16x16 pixels. Cada bloco terá sua própria equalização de histograma aplicada.
@@ -12,6 +14,7 @@ Passo a Passo do Processo
 - Limitação do Contraste (Clip Limit): Para evitar que o contraste se torne exagerado e introduza ruído (ou um efeito de "ampliação" excessiva), o CLAHE define um limite máximo para o contraste, chamado clipLimit. Esse limite restringe a intensidade do aumento de contraste para evitar artefatos.
 
 - Interpolações nas Bordas dos Blocos: Após a equalização dos blocos, o CLAHE suaviza as transições entre eles por interpolação, mantendo a imagem uniforme e evitando que ela apresente divisões abruptas.
+  
 
 Parâmetros Importantes
 Clip Limit: Define o limite máximo de aumento de contraste permitido em cada bloco. Valores mais altos aumentam o contraste, enquanto valores mais baixos mantêm um efeito mais suave.
