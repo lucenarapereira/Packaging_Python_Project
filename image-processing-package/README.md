@@ -1,7 +1,10 @@
 # package_name
 
 Description. 
-The package image_processing_clahe implements the CLAHE (Contrast Limited Adaptive Histogram Equalization) algorithm, which is used for image processing and contrast improvement, especially in very light or dark areas, and is an extension of AHE (Adaptive Histogram Equalization).
+The package image_processing_clahe implements the CLAHE (Contrast Limited Adaptive Histogram Equalization) algorithm, which is used for image processing and contrast improvement, especially in very light or dark areas, and is an extension of AHE (Adaptive Histogram Equalization). 
+
+Requirements OpenCV e Matplotlib.
+
 
 ## Installation
 
@@ -14,7 +17,7 @@ pip install image_processing_clahe
 ## Usage
 
 ```python
-from image_processing_clahe.algoritmo import process_image
+from image_processing_clahe.algoritmo import process_image, plot_img
 ```
 
 ## Author
